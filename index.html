@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device, initial-scale=1.0">
+        <title>Shareable Resume Builder</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Shareable Resume Builder</h1>
+        <form id="resume-form">
+        <fieldset>
+            <legend><b>Personal Information</b> </legend>
+
+            <label for="username"><b>Username:</b> </label>
+            <input type="text" id="username" name="username" required><br>
+
+
+            <br><label for="name"><b>Name:</b> </label>
+            <input type="text" id="name" name="name" required><br>
+            
+
+            <br><label for="email"><b>Email:</b> </label>
+            <input type="email" id="email" name="email" required ><br>
+            
+
+            <br><label for="phone"><b>Phone:</b> </label>
+            <input type="tel" id="phone" name="phone" required ><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Education</b></legend>
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" rows="5" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Experience</b></legend>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" rows="5" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Skills</b></legend>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" rows="5" required></textarea><br>
+        </fieldset>
+        <button type="submit"><b>Generate Resume Below</b></button>
+    </form>
+    <br>
+
+    <div id="resume-display" contenteditable="true">
+        <!-- Resume Will Be Generated Blow -->
+    </div>
+    <br>
+
+    <!-- section for the share able link and download option -->
+     <div id="shareable-link-container" style="display: none;">
+        <h2>Shareable Link</h2>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        <br>
+        <button id="download-pdf"><b>Download as PDF</b></button>
+     </div>
+
+    <script src="script.js"></script>
+
+    </body>
+    
+</html>
